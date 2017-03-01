@@ -1,17 +1,16 @@
-// control flow in JavaScript
+// objects in JavaScript
 
-var age = 100;
+// var dogName = "Bucky";
+// var dogColor = "black";
+// var dogAge = 14;
+// var dogIsBlind = true;
 
-if (age < 12) {
-   console.log("You're a child.");
-} else if (age === 12) {
-  console.log("You're exactly " + age + " years old!");
-} else if (age < 20) {
-   console.log("You're a teenager.");
-} else if (age === 20) {
-  console.log("You're exactly " + age + " years old!");
-} else if (age <= 100) {
-   console.log("You're probably an adult, or exactly 100.");
-} else {
-  console.log("You're really old! Or you didn't give me a number...");
+var dog = {
+  name      : "Bucky",
+  color     : "black",
+  age       : 14,
+  isBlind   : true,
+  ownerName : "Bernice"
 }
+
+console.log(dog.ownerName);
