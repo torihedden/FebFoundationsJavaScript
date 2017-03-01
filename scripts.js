@@ -1,16 +1,14 @@
-// objects in JavaScript
+var listItems = $("li");
 
-// var dogName = "Bucky";
-// var dogColor = "black";
-// var dogAge = 14;
-// var dogIsBlind = true;
+console.log(listItems);
 
-var dog = {
-  name      : "Bucky",
-  color     : "black",
-  age       : 14,
-  isBlind   : true,
-  ownerName : "Bernice"
-}
 
-console.log(dog.ownerName);
+
+
+
+
+
+
+
+// manipulating styles with jQuery:
+// selectorName.css("property", "value");
