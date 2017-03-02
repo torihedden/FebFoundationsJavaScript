@@ -1,12 +1,20 @@
-// Exercises from last night
-//
-// The below function does not work. The variable twoPlusTwo gets set to undefined. Refactor the function to make it work.
+// exercise 2
 
-function addNumbers(numberA, numberB) {
-  var result = numberA + numberB;
-  return result;
+// Write a function called yell that logs out an uppercase version of a string.
+// Write a function called yell10 that uses your yell function to log out an uppercase version of a string 10 times.
+
+function yell(x) {
+  var upperString = x.toUpperCase();
+  return upperString;
 }
 
-var twoPlusTwo = addNumbers(2, 2);
+console.log(yell("tori"));
 
-console.log(twoPlusTwo); // 4 is the expected output from this function with these given inputs
+
+function yell10(z) {
+  for (var i = 0; i < 10; i++) {
+    console.log(yell(z));
+  }
+}
+
+yell10("the iron yard");
