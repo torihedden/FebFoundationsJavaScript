@@ -1,20 +1,14 @@
-// exercise 2
-
-// Write a function called yell that logs out an uppercase version of a string.
-// Write a function called yell10 that uses your yell function to log out an uppercase version of a string 10 times.
-
-function yell(x) {
-  var upperString = x.toUpperCase();
-  return upperString;
-}
-
-console.log(yell("tori"));
+// Write a function called longest that returns the longest of two input strings or arrays.
 
 
-function yell10(z) {
-  for (var i = 0; i < 10; i++) {
-    console.log(yell(z));
+function longer(a, b) {
+  if (a.length === b.length) {
+    return "they are the same length";
+  } else if (a.length > b.length) {
+    return a;
+  } else if (b.length > a.length) {
+    return b;
   }
 }
 
-yell10("the iron yard");
+console.log(longer("string", "abcdefghijklmnop"));
